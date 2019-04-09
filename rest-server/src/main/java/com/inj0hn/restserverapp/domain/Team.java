@@ -4,20 +4,20 @@ import java.util.List;
 
 public class Team {
 
-	private String name;
-	private List<Person> members;
+	private final String name;
+	private final List<Person> members;
+	
+	public Team(String name, List<Person> members) {
+		this.name = name;
+		this.members = members;
+	}
 	
 	public String getName() {
 		return name;
 	}
-	public void setName(String name) {
-		this.name = name;
-	}
+	
 	public List<Person> getMembers() {
 		return members;
-	}
-	public void setMembers(List<Person> members) {
-		this.members = members;
 	}
 	
 }
